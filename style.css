@@ -1,55 +1,95 @@
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-        h1{
-            color: white;
-            font-size: 32px;
-        }
-        .centered-heading {
-            height: 10vh;
-            display: flex;
-            justify-content: space-around;  /* Top horizontally */
-            align-items:center ;
-            font-size: 3em;
-            background: #ffd904;
-        }
-        .centered-heading p {
-            font-size: 20px;
-        }
-        .background {
-            background: url("./images/recording-studio-1869560_1280.jpg");
-            height: 45vh;
-            display: flex;
-        }
-        .cards {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-            
-        }
-        .card {
-            border: 2px solid rgb(243, 238, 238);
-            height: 400px;
-            width: 400px;
-            border-radius: 20px;
-            background: rgb(213, 213, 219);
-        }
-        .welcome {
-            background: url("./images\IMG_0962.JPG");
-            height: 45vh;
-            display: flex;
-            
-        }
-        .bg{
-            background: url("./images\IMG_0963.jpg");
-            height: 45vh;
-            display: flex;
-        }
-        .photo{
-            width: 30%;
-            height: 30%;
-            background: url("./images\IMG_0962.JPG");
-            background-position: center;
-        }
-    
+/* MAIN STYLES */
+    body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        margin: 50px;
+    }
+    h1{
+        color: white;
+        font-size: 32px;
+    }
+    .centered-heading {
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;  /* Top horizontally */
+        align-items:center ;
+        font-size: 3em;
+        background: #ffd904;
+    }
+    .centered-heading p {
+        font-size: 20px;
+    }
+    .background {
+        background: url("./images/recording-studio-1869560_1280.jpg");
+        height: 45vh;
+        display: flex;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        
+    }
+    .card-1,
+    .card-2,
+    .card-3 {
+        border: 2px solid rgb(243, 238, 238);
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        background: rgb(213, 213, 219);
+    }
+
+    .card-1 {
+        background: url("./images/microphone-6784737_640.jpg");
+    }
+    .welcome {
+        background: url("./images\IMG_0962.JPG");
+        height: 45vh;
+        display: flex;
+        
+    }
+    .bg{
+        background: url("./images\IMG_0963.jpg");
+        height: 45vh;
+        display: flex;
+    }
+    .photo{
+        width: 30%;
+        height: 30%;
+        background: url("./images\IMG_0962.JPG");
+        background-position: center;
+    }
+
+/* FORM STYLES */
+    form label {
+        display: block;
+        margin-top: 15px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /* CONTACT-PAGE STYLES */
+    .contact-section {
+        max-width: 600px;
+        margin: auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
