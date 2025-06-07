@@ -1,77 +1,58 @@
-<html>
- <header>
-    <title>TEEFAN MUSIC</title>
-    <link rel="stylesheet" href="./style.css"></link>
- </header>
- <body>
-    <div class="centered-heading">
-        <p><a href="./home.html">Home</a></p>
-        <p><a href="./about.html">About</a></p>
-        <p><a href="./booking.html">Booking</a></p>
-        <p><a href="./contact.html">Contact</a></p>
-        <p><a href="./reach-us.html">Reach Us</a></p>
-    </div>
-    <body>
-  <script src="script.js"></script>
-</body>
-    <link rel="preload" as="image" href="images\recording-studio-1869560_1280.jpg">
-    <div class="background">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TEEFAN MUSIC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="centered-heading">
+    <p><a href="./home.html">Home</a></p>
+    <p><a href="./about.html">About</a></p>
+    <p><a href="./booking.html">Booking</a></p>
+    <p><a href="./contact.html">Contact</a></p>
+    <p><a href="./reach-us.html">Reach Us</a></p>
+  </header>
+
+  <main>
+    <div class="background" id="header">
       <h1>TEEFAN MUSIC</h1>
+      <p>Welcome to Teefan Music! We are passionate in Audio and Video Production.</p>
     </div>
 
-    <!-- Slides -->
-    <div>
-      <div class="cards">
-          <div class="card-1"></div>
-          <div class="card-2"></div>
-          <div class="card-3"></div>
+    <!-- SLIDER -->
+    <div class="card-section">
+      <div class="card-container-wrapper">
+        <div class="card-container" id="cardContainer">
+          <div class="card" id="c1"></div>
+          <div class="card" id="c2"></div>
+          <div class="card" id="c3"></div>
+          <div class="card" id="c4"></div>
+          <div class="card" id="c5"></div>
+          <div class="card" id="c6"></div>
+        </div>
       </div>
       <div class="slide-buttons">
-        <button class="previous">Previous</button>
-        <button class="next">Next</button>
+        <button class="previous" onclick="showPrev()">Previous</button>
+        <button class="next" onclick="showNext()">Next</button>
       </div>
     </div>
 
     <div class="Welcome">
-      <h2>Welcome to teefan Music</h2>
+      <h2>Welcome to Teefan Music</h2>
     </div>
-    <head>
-      <meta charset="UTF-8">
-      <title>Company Info</title>
-      <style>
-        footer {
-          background-color: #333;
-          color: white;
-          text-align: center;
-          padding: 20px;
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-        }
-      </style>
-        <img src="images\tonny onthebeat\IMG_20250530_150954_004.jpg" alt="Studio session" width="400">
-   <img src="images\mixer-4888558_1280.jpg" alt="mixer" width="600">
-   <img src="images\tonny onthebeat\IMG_20250530_150733_725.jpg" alt="mixer" width="800">
-<img src="images\studio-9054709_640.jpg" alt="Studio session" width="600">
-<img src="images\tonny onthebeat\IMG_20250530_151005_008.jpg" alt="Studio session" width="1000">
-<img src="images\recording-studio-1869560_1280.jpg" alt="Studio session" width="600">
-    </head>
-     <div class="slideshow-container">
-    <img class="slide" src="images\IMG_0956.JPG" alt="Slide 1" />
-    <img class="slide" src="images\studio-3863719_640.jpg" alt="Slide 2" />
-    <img class="slide" src="images\tonny onthebeat\IMG_20250530_150733_725.jpg" alt="Slide 3" />
-  </div>
-    <body>
-    
-      <!-- Your main content here -->
-    
-      <footer>
-        &copy; 2026 Teefan Music | Call : +254704675499
-      </footer>
 
+    <div class="slideshow-container">
+      <img class="slide" src="images/IMG_0956.JPG" alt="Slide 1" />
+      <img class="slide" src="images/studio-3863719_640.jpg" alt="Slide 2" />
+      <img class="slide" src="images/IMG_20250530_150733_725.jpg" alt="Slide 3"/>
+    </div>
+  </main>
 
- </body>
+  <footer>
+    &copy; 2026 Teefan Music | Call: +254704675499
+  </footer>
 
-
-
+  <script src="main.js"></script>
+</body>
 </html>

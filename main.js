@@ -1,17 +1,26 @@
-<html>
- <header>
-    <title>TEEFAN MUSIC</title>
-    <link rel="stylesheet" href="./style.css"></link>
- </header>
- <body>
-    <div class="centered-heading">
-        <p><a href="./home.html">Home</a></p>
-        <p><a href="./about.html">About</a></p>
-        <p><a href="./booking.html">Booking</a></p>
-        <p><a href="./contact.html">Contact</a></p>
-    </div>
-    <div class="background">
-    </div>
-    
- </body>
-</html>
+const container = document.getElementById('cardContainer');
+const cards = container.children;
+let start = 0;
+const visibleCount = 3;
+
+function updateCards() {
+   for (let i = 0; i<cards.length; i++) {
+      cards[i].style.display = (i>=start && i<start + visibleCount) ? 'inline-block' : 'none'
+   }
+}
+
+function showNext() {
+  if (start + visibleCount < cards.length) {
+    start++;
+    updateCards();
+  }
+}
+
+function showPrev() {
+  if (start > 0) {
+    start--;
+    updateCards();
+  }
+}
+
+updateCards();
